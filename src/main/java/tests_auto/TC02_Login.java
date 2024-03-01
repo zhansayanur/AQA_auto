@@ -34,7 +34,6 @@ public class TC02_Login {
         } else {
             System.out.println("Test Failed! Error message is not displayed.");
         }
-
         driver.quit();
     }
 }
