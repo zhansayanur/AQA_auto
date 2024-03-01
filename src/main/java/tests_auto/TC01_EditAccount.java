@@ -22,7 +22,7 @@ public class TC01_EditAccount {
         emailField.sendKeys("snzhansaya@gmail.com");
 
         WebElement passwordField = driver.findElement(By.name("password"));
-        passwordField.sendKeys("emma1995");
+        passwordField.sendKeys("123456@#$");
 
         WebElement signInButton = driver.findElement(By.xpath("//button[contains(text(),'Sign in')]"));
         signInButton.click();
