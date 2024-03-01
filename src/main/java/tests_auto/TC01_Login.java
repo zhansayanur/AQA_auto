@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-//D:\05 Programming\chromedriver-win64\chromedriver.exe
 public class TC01_Login {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "D:\\05 Programming\\chromedriver-win64\\chromedriver.exe");
