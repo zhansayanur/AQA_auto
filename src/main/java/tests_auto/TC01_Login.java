@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+// Verify the login functionality of website. Enter a valid username and valid password.
+
 public class TC01_Login {
     public static void main(String[] args) {
         try {

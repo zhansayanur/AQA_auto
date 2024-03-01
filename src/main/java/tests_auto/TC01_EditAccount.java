@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
+//Check that the user is able to update their account information.
+
 public class TC01_EditAccount {
     public static void main(String[] args) {
         try {

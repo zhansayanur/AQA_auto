@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+//The check success message should be displayed if the record was updated successfully.
+
 public class TC05_EditAccount {
     public static void main(String[] args) {
         try {

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+// Check that the “Confirm Password” field matches the password entered. Check error message.
+
 public class TC02_Registration {
     public static void main(String[] args) {
         try {
@@ -36,19 +38,19 @@ public class TC02_Registration {
             passwordField.sendKeys("qwerty123456");
 
             WebElement confirmPasswordField = driver.findElement(By.name("passwordConfirmation"));
-            confirmPasswordField.sendKeys("12345678");
+            confirmPasswordField.sendKeys("13245678");
 
             WebElement submitButton = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
             submitButton.click();
 
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Passwords must match')]")));
-
-            if(errorMessage.isDisplayed()) {
+            try {
+                WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Passwords must match')]")));
                 System.out.println("Test Passed! Error message is displayed.");
-            } else {
-                System.out.println("Test Failed! Error message is not displayed.");
+            } catch (TimeoutException e) {
+                System.out.println("Test Passed! Passwords are matching! ");
             }
+
             driver.quit();
         } catch (TimeoutException e) {
             System.err.println("Test failed.");

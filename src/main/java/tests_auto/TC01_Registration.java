@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+// Verify that a new user can register successfully. Fill in all fields with information.
+
 public class TC01_Registration {
     public static void main(String[] args) {
         try {
