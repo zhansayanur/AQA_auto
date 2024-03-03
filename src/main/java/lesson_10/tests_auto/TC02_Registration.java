@@ -1,4 +1,4 @@
-package tests_auto;
+package lesson_10.tests_auto;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;

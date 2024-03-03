@@ -1,4 +1,4 @@
-package shop_compare;
+package lesson_10.shop_compare;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;

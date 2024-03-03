@@ -1,4 +1,4 @@
-package open_websites;
+package lesson_10.open_websites;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;

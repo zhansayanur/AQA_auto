@@ -1,4 +1,4 @@
-package compare_elements;
+package lesson_10.compare_elements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
