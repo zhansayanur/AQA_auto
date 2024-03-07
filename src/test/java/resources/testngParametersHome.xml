@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite">
+    <test name="Login1">
+        <parameter name="email" value="snzhansaya@gmail.com"/>
+        <parameter name="password" value="emma1995"/>
+        <classes>
+            <class name="lesson_11.parameter.ParameterClass"/>
+        </classes>
+    </test>
+    <test name="Login2">
+        <parameter name="email" value="61yana61@gmail.com"/>
+        <parameter name="password" value="qwerty123456"/>
+        <classes>
+            <class name="lesson_11.parameter.ParameterClass"/>
+        </classes>
+    </test>
+    <test name="Login3">
+        <parameter name="email" value="hatak3333@gmail.com"/>
+        <parameter name="password" value="12345678"/>
+        <classes>
+            <class name="lesson_11.parameter.ParameterClass"/>
+        </classes>
+    </test>
+</suite>
