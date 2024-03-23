@@ -1,9 +1,6 @@
 package lesson_14;
 
-import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import jdk.jfr.Description;
 import lesson_14.DriverSetup;
 import lesson_14.pages.RegistrationPage;
@@ -45,6 +42,7 @@ public class RegistrationPageTest {
     @Description("Verify that the registration page detects and prevents the use of commonly used or easily guessable passwords (e.g., \"password,\" \"12345678,\").")
     @Severity(SeverityLevel.NORMAL)
     @Feature("Entering guessable password")
+    @TmsLink("https://testzn.testrail.io/index.php?/cases/view/1")
     public void testGuessablePassword() {
         registrationPage.openRegistrationPage()
                 .enterFirstName()
